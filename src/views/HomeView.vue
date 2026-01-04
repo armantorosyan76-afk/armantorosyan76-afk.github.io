@@ -91,6 +91,7 @@
 
 <style scoped lang="scss">
   .lesson {
+    padding: 0 20px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -103,8 +104,12 @@
     }
 
     &__question {
-      font-size: 32px;
+      font-size: 24px;
       text-align: center;
+
+      @media (min-width: 768px) {
+        font-size: 32px;
+      }
     }
 
     &__score {
@@ -140,7 +145,6 @@
     }
 
     &__answer {
-      min-width: 220px;
       padding: 10px 18px;
       background-color: #fff;
       color: #000;
